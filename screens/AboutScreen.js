@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Card, Text, Avatar, ListItem } from "react-native-elements";
 import { ScrollView } from "react-native";
 import { PARTNERS } from "../shared/partners";
@@ -14,10 +15,8 @@ const Mission = () => {
     );
 };
 
-
 const AboutScreen = () => {
-    const partners = PARTNERS;
-
+    const [partners, setPartners] = useState(PARTNERS);
     return (
         <ScrollView>
             <Mission />
