@@ -110,7 +110,6 @@ const ReservationScreen = () => {
                         title='Close'
                     />
                 </View>
-
             </Modal>
         </ScrollView>
     );
